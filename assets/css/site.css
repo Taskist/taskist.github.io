@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #3498db; /* Bright Blue */
+  --color-secondary: #2c3e50; /* Dark Charcoal/Navy */
+  --color-text-light: #ecf0f1; /* Light Gray for dark background */
+  --color-text-dark: #34495e; /* Dark Gray for headings */
+  --color-background: #232d3b; /* Slightly lighter dark background */
+  --color-accent-green: #2ecc71; /* Green for checkmarks/success */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- HEADER & LOGO --- */
+
+.logo-area h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* Replace 'logo-placeholder.jpg' with your actual image path */
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-primary);
+  mask: url("PLACEHOLDER_LOGO_IMAGE.svg") no-repeat center / contain;
+  -webkit-mask: url("PLACEHOLDER_LOGO_IMAGE.svg") no-repeat center / contain;
+  margin: 0 auto;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  padding: 10px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: var(--color-text-light);
+  opacity: 0.85;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--color-accent-green);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #27ae60; /* Darker green */
+}
+
+/* --- FEATURES SECTION --- */
+.features {
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  margin-top: 20px;
+}
+
+.features h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.feature-card {
+  background-color: var(--color-background);
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 5px solid var(--color-primary);
+}
+
+.feature-card h4 {
+  color: var(--color-primary);
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* --- FOOTER --- */
+footer {
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  margin: 0 10px;
+}
